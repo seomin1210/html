@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  </head>
+  <body>
+    on first join:
+	set {%player%.턱} to 0
+	set {%player%.눈} to 0
+	set {%player%.아가미} to 0
+	set {%player%.비늘} to 0
+	set {%player%.지느러미} to 0
+	set {%player%.스텟포인트} to 0
+	set {레벨.%player%} to 0
+	set {경험치.%player%} to 0
+	set {최대레벨} to 250
+	set {attack.%player%.레벨제한} to 0
+	set {attack.%player%.턱제한} to 0
+	set {attack.%player%.눈제한} to 0
+	set {attack.%player%.아가미제한} to 0
+	set {attack.%player%.비늘제한} to 0
+	set {attack.%player%.지느러미제한} to 0
+	set {attack.%player%.공격력} to 0
+	set {attack.%player%.체력흡수} to 0
+	set {attack.%player%.크리티컬} to 0
+	set {attack.%player%.이동속도} to 0
+	set {attack.%player%.턱} to 0
+	set {attack.%player%.눈} to 0
+	set {attack.%player%.아가미} to 0
+	set {attack.%player%.비늘} to 0
+	set {attack.%player%.지느러미} to 0
+	set player's level to {레벨.%player%}
+	set {_hp.%player%} to 0
+	set {speed.%player%} to 0
+	set {armor.%player%.턱} to 0
+	set {armor.%player%.비늘} to 0
+	set {armor.%player%.아가미} to 0
+	set {armor.%player%.지느러미} to 0
+	set {armor.%player%.공격력} to 0
+	set {armor.%player%.이동속도} to 0
+	set {helmet.%player%.레벨제한} to 0
+	set {helmet.%player%.턱제한} to 0
+	set {helmet.%player%.눈제한} to 0
+	set {helmet.%player%.아가미제한} to 0
+	set {helmet.%player%.비늘제한} to 0
+	set {helmet.%player%.지느러미제한} to 0
+	set {chestplate.%player%.레벨제한} to 0
+	set {chestplate.%player%.턱제한} to 0
+	set {chestplate.%player%.눈제한} to 0
+	set {chestplate.%player%.아가미제한} to 0
+	set {chestplate.%player%.비늘제한} to 0
+	set {chestplate.%player%.지느러미제한} to 0
+	set {leggings.%player%.레벨제한} to 0
+	set {leggings.%player%.턱제한} to 0
+	set {leggings.%player%.눈제한} to 0
+	set {leggings.%player%.아가미제한} to 0
+	set {leggings.%player%.비늘제한} to 0
+	set {leggings.%player%.지느러미제한} to 0
+	set {boots.%player%.레벨제한} to 0
+	set {boots.%player%.턱제한} to 0
+	set {boots.%player%.눈제한} to 0
+	set {boots.%player%.아가미제한} to 0
+	set {boots.%player%.비늘제한} to 0
+	set {boots.%player%.지느러미제한} to 0
+
+command /초기화:
+	trigger:
+		set {%player%.턱} to 0
+		set {%player%.눈} to 0
+		set {%player%.아가미} to 0
+		set {%player%.비늘} to 0
+		set {%player%.지느러미} to 0
+		set {%player%.스텟포인트} to 0
+		set {경험치.%player%} to 0
+		set {레벨.%player%} to 0
+		set {최대레벨} to 250
+		set {attack.%player%.레벨제한} to 0
+		set {attack.%player%.턱제한} to 0
+		set {attack.%player%.눈제한} to 0
+		set {attack.%player%.아가미제한} to 0
+		set {attack.%player%.비늘제한} to 0
+		set {attack.%player%.지느러미제한} to 0
+		set {attack.%player%.공격력} to 0
+		set {attack.%player%.체력흡수} to 0
+		set {attack.%player%.크리티컬} to 0
+		set {attack.%player%.이동속도} to 0
+		set {attack.%player%.턱} to 0
+		set {attack.%player%.눈} to 0
+		set {attack.%player%.아가미} to 0
+		set {attack.%player%.비늘} to 0
+		set {attack.%player%.지느러미} to 0
+		set player's level to {레벨.%player%}
+		set {_hp.%player%} to 0
+		set {speed.%player%} to 0
+		set {armor.%player%.턱} to 0
+		set {armor.%player%.비늘} to 0
+		set {armor.%player%.아가미} to 0
+		set {armor.%player%.지느러미} to 0
+		set {armor.%player%.공격력} to 0
+		set {armor.%player%.이동속도} to 0
+		set {helmet.%player%.레벨제한} to 0
+		set {helmet.%player%.턱제한} to 0
+		set {helmet.%player%.눈제한} to 0
+		set {helmet.%player%.아가미제한} to 0
+		set {helmet.%player%.비늘제한} to 0
+		set {helmet.%player%.지느러미제한} to 0
+		set {chestplate.%player%.레벨제한} to 0
+		set {chestplate.%player%.턱제한} to 0
+		set {chestplate.%player%.눈제한} to 0
+		set {chestplate.%player%.아가미제한} to 0
+		set {chestplate.%player%.비늘제한} to 0
+		set {chestplate.%player%.지느러미제한} to 0
+		set {leggings.%player%.레벨제한} to 0
+		set {leggings.%player%.턱제한} to 0
+		set {leggings.%player%.눈제한} to 0
+		set {leggings.%player%.아가미제한} to 0
+		set {leggings.%player%.비늘제한} to 0
+		set {leggings.%player%.지느러미제한} to 0
+		set {boots.%player%.레벨제한} to 0
+		set {boots.%player%.턱제한} to 0
+		set {boots.%player%.눈제한} to 0
+		set {boots.%player%.아가미제한} to 0
+		set {boots.%player%.비늘제한} to 0
+		set {boots.%player%.지느러미제한} to 0
+
+command /경험치:
+	trigger:
+		message "&e[&f현재 레벨&e] &f: &e%{레벨.%player%}%"
+		message "&e[&f현재 경험치&e] &f: &e%{경험치.%player%}%"
+		message "&e[&f남은 경험치&e] &f: &e%{rpg.maxExp::%{레벨.%player%}%} - {경험치.%player%}%"
+
+command /스텟:
+	trigger:
+		set {_crb} to 0
+		open chest with 1 rows named "&6스텟" to player
+		loop 36 times:
+			set slot {_crb} of current inventory of player to black stained glass pane named "&7"
+			add 1 to {_crb}
+		set slot 0 of current inventory of player to diamond sword named "&7턱"
+		add "&7턱: %{%player%.턱}%" to lore of slot 0 of current inventory of player
+		add " " to lore of slot 0 of current inventory of player
+		add "&f● &4공격력 +4" to lore of slot 0 of current inventory of player
+		add "&f● &2최대 체력치 +10" to lore of slot 0 of current inventory of player
+		add "&e스텟포인트: %{%player%.스텟포인트}%" to lore of slot 0 of current inventory of player
+
+		set slot 2 of current inventory of player to eye of ender named "&e눈"
+		add "&e눈: %{%player%.눈}%" to lore of slot 2 of current inventory of player
+		add " " to lore of slot 2 of current inventory of player
+		add "&f● &e크리티컬 확률 +0.2" to lore of slot 2 of current inventory of player
+		add "&e스텟포인트: %{%player%.스텟포인트}%" to lore of slot 2 of current inventory of player
+
+		set slot 4 of current inventory of player to prismarine shard named "&a아가미"
+		add "&a아가미: %{%player%.아가미}%" to lore of slot 4 of current inventory of player
+		add " " to lore of slot 4 of current inventory of player
+		add "&f● &2최대 체력치 +80" to lore of slot 4 of current inventory of player
+		add "&e스텟포인트: %{%player%.스텟포인트}%" to lore of slot 4 of current inventory of player
+
+		set slot 6 of current inventory of player to chainmail chestplate named "&1비늘"
+		add "&b비늘: %{%player%.비늘}%" to lore of slot 6 of current inventory of player
+		add " " to lore of slot 6 of current inventory of player
+		add "&f● &a공격 방어력 +3" to lore of slot 6 of current inventory of player
+		add "&f● &2최대 체력치 +30" to lore of slot 6 of current inventory of player
+		add "&e스텟포인트: %{%player%.스텟포인트}%" to lore of slot 6 of current inventory of player
+
+		set slot 8 of current inventory of player to quartz named "&4지느러미"
+		add "&4지느러미: %{%player%.지느러미}%" to lore of slot 8 of current inventory of player
+		add " " to lore of slot 8 of current inventory of player
+		add "&f● &4공격력 +1" to lore of slot 8 of current inventory of player
+		add "&f● &3이속 증가량 +0.2" to lore of slot 8 of current inventory of player
+		add "&e스텟포인트: %{%player%.스텟포인트}%" to lore of slot 8 of current inventory of player
+
+command /스텟초기화:
+	trigger:
+		if player is op:
+			message "&e스텟에 관련된 모든 정보를 재설정하였습니다."
+			set {%player%.스텟포인트} to 0
+			set {%player%.턱} to 0
+			set {%player%.눈} to 0
+			set {%player%.아가미} to 0
+			set {%player%.비늘} to 0
+			set {%player%.지느러미} to 0
+
+command /스텟포인트설정 [<integer>]:
+	trigger:
+		if player is op:
+			message "&a스텟포인트를 성공적으로 설정하였습니다."
+			add arg-1 to {%player%.스텟포인트}
+command /스텟설정 [<integer>] [<integer>] [<integer>] [<integer>] [<integer>] [<integer>]:
+	trigger:
+		if player is op:
+			message "&e스텟에 관련된 정보를 설정하였습니다."
+			set {%player%.스텟포인트} to arg-1
+			set {%player%.턱} to arg-2
+			set {%player%.눈} to arg-3
+			set {%player%.아가미} to arg-4
+			set {%player%.비늘} to arg-5
+			set {%player%.지느러미} to arg-6
+command /무기설정 [<integer>] [<integer>] [<integer>] [<integer>] [<integer>] [<integer>] [<integer>] [<integer>] [<integer>] [<integer>] [<integer>] [<integer>] [<integer>] [<integer>] [<integer>]:
+	trigger:
+		if player is op:
+			if arg-1 is not set:
+				message "&6/무기설정 <레벨제한> <턱제한> <눈제한> <아가미제한> <비늘제한> <지느러미제한> <공격력> <체력흡수> <크리티컬> <이동속도> <턱> <눈> <아가미> <비늘> <지느러미>"
+			else:
+				if player's tool is air:
+					message "&c손에 장비를 들어주세요."
+				else:
+					if arg-1 is not 0:
+						add "&b●레벨제한: %arg-1%" to lore of player's tool
+					if arg-2 is not 0:
+						add "&7●턱 제한: %arg-2%" to lore of player's tool
+					if arg-3 is not 0:
+						add "&e●눈 제한: %arg-3%" to lore of player's tool
+					if arg-4 is not 0:
+						add "&a●아가미 제한: %arg-4%" to lore of player's tool
+					if arg-5 is not 0:
+						add "&1●비늘 제한: %arg-5%" to lore of player's tool
+					if arg-6 is not 0:
+						add "&4●지느러미 제한: %arg-6%" to lore of player's tool
+					if arg-7 is not 0:
+						add "&b●공격력: %arg-7%" to lore of player's tool
+					if arg-8 is not 0:
+						add "&b●체력흡수: %arg-8%" to lore of player's tool
+					if arg-9 is not 0:
+						add "&b●크리티컬: %arg-9%" to lore of player's tool
+					if arg-10 is not 0:
+						add "&b●이동속도: %arg-10%" to lore of player's tool
+					if arg-11 is not 0:
+						add "&7●턱: %arg-11%" to lore of player's tool
+					if arg-12 is not 0:
+						add "&e●눈: %arg-12%" to lore of player's tool
+					if arg-13 is not 0:
+						add "&a●아가미: %arg-13%" to lore of player's tool
+					if arg-14 is not 0:
+						add "&1●비늘: %arg-14%" to lore of player's tool
+					if arg-15 is not 0:
+						add "&4●지느러미: %arg-15%" to lore of player's tool
+					message "&c무기스텟을 설정했습니다."
+
+command /방어구설정 [<integer>] [<integer>] [<integer>] [<integer>] [<integer>] [<integer>] [<integer>] [<integer>] [<integer>] [<integer>] [<integer>] [<integer>] [<integer>] [<integer>] [<integer>]:
+	trigger:
+		if player is op:
+			if arg-1 is not set:
+				message "&6/방어구설정 <레벨제한> <턱제한> <눈제한> <아가미제한> <비늘제한> <지느러미제한> <공격력> <방어력> <체력> <이동속도> <턱> <눈> <아가미> <비늘> <지느러미>"
+			else:
+				if player's tool is air:
+					message "&c손에 장비를 들어주세요."
+				else:
+					if arg-1 is not 0:
+						add "&b●레벨제한: %arg-1%" to lore of player's tool
+					if arg-2 is not 0:
+						add "&7●턱 제한: %arg-2%" to lore of player's tool
+					if arg-3 is not 0:
+						add "&e●눈 제한: %arg-3%" to lore of player's tool
+					if arg-4 is not 0:
+						add "&a●아가미 제한: %arg-4%" to lore of player's tool
+					if arg-5 is not 0:
+						add "&1●비늘 제한: %arg-5%" to lore of player's tool
+					if arg-6 is not 0:
+						add "&4●지느러미 제한: %arg-6%" to lore of player's tool
+					if arg-7 is not 0:
+						add "&b●공격력: %arg-7%" to lore of player's tool
+					if arg-8 is not 0:
+						add "&b●방어력: %arg-8%" to lore of player's tool
+					if arg-9 is not 0:
+						add "&b●체력: %arg-9%" to lore of player's tool
+					if arg-10 is not 0:
+						add "&b●이동속도: %arg-10%" to lore of player's tool
+					if arg-11 is not 0:
+						add "&7●턱: %arg-11%" to lore of player's tool
+					if arg-12 is not 0:
+						add "&e●눈: %arg-12%" to lore of player's tool
+					if arg-13 is not 0:
+						add "&a●아가미: %arg-13%" to lore of player's tool
+					if arg-14 is not 0:
+						add "&1●비늘: %arg-14%" to lore of player's tool
+					if arg-15 is not 0:
+						add "&4●지느러미: %arg-15%" to lore of player's tool
+
+on inventory click:
+	if iname is "&6스텟":
+		cancel event
+		if clicked item is not stained glass pane:
+			if {%player%.스텟포인트} is bigger than 0:
+				subtract 1 from {%player%.스텟포인트}
+				if clicked raw slot is 0:
+					add 1 to {%player%.턱}
+				else if raw slot is 2:
+					add 1 to {%player%.눈}
+				else if raw slot is 4:
+					add 1 to {%player%.아가미}
+				else if raw slot is 6:
+					add 1 to {%player%.비늘}
+				else if raw slot is 8:
+					add 1 to {%player%.지느러미}
+				make player execute command "/스텟"
+			else:
+				message "&c스텟포인트가 부족합니다."
+
+
+every 1 tick:
+	loop all players:
+		set {attack.%loop-player%.레벨제한} to 0
+		set {attack.%loop-player%.턱제한} to 0
+		set {attack.%loop-player%.눈제한} to 0
+		set {attack.%loop-player%.아가미제한} to 0
+		set {attack.%loop-player%.비늘제한} to 0
+		set {attack.%loop-player%.지느러미제한} to 0
+		set {attack.%loop-player%.공격력} to 0
+		set {attack.%loop-player%.체력흡수} to 0
+		set {attack.%loop-player%.크리티컬} to 0
+		set {attack.%loop-player%.이동속도} to 0
+		set {attack.%loop-player%.턱} to 0
+		set {attack.%loop-player%.눈} to 0
+		set {attack.%loop-player%.아가미} to 0
+		set {attack.%loop-player%.비늘} to 0
+		set {attack.%loop-player%.지느러미} to 0
+		set loop-player's level to {레벨.%loop-player%}
+		set {_hp.%loop-player%} to 0
+		set {speed.%loop-player%} to 0
+		set {armor.%loop-player%.턱} to 0
+		set {armor.%loop-player%.비늘} to 0
+		set {armor.%loop-player%.아가미} to 0
+		set {armor.%loop-player%.지느러미} to 0
+		set {armor.%loop-player%.공격력} to 0
+		set {armor.%loop-player%.이동속도} to 0
+		set {helmet.%loop-player%.레벨제한} to 0
+		set {helmet.%loop-player%.턱제한} to 0
+		set {helmet.%loop-player%.눈제한} to 0
+		set {helmet.%loop-player%.아가미제한} to 0
+		set {helmet.%loop-player%.비늘제한} to 0
+		set {helmet.%loop-player%.지느러미제한} to 0
+		set {chestplate.%loop-player%.레벨제한} to 0
+		set {chestplate.%loop-player%.턱제한} to 0
+		set {chestplate.%loop-player%.눈제한} to 0
+		set {chestplate.%loop-player%.아가미제한} to 0
+		set {chestplate.%loop-player%.비늘제한} to 0
+		set {chestplate.%loop-player%.지느러미제한} to 0
+		set {leggings.%loop-player%.레벨제한} to 0
+		set {leggings.%loop-player%.턱제한} to 0
+		set {leggings.%loop-player%.눈제한} to 0
+		set {leggings.%loop-player%.아가미제한} to 0
+		set {leggings.%loop-player%.비늘제한} to 0
+		set {leggings.%loop-player%.지느러미제한} to 0
+		set {boots.%loop-player%.레벨제한} to 0
+		set {boots.%loop-player%.턱제한} to 0
+		set {boots.%loop-player%.눈제한} to 0
+		set {boots.%loop-player%.아가미제한} to 0
+		set {boots.%loop-player%.비늘제한} to 0
+		set {boots.%loop-player%.지느러미제한} to 0
+		if loop-player's tool is not air:
+			if loop-player's tool's lore is set:
+				set {_무기::*} to uncolored lore of loop-player's tool
+				loop {_무기::*}:
+					if loop-value-2 contains "●레벨제한:":
+						set {_lr} to loop-value-2
+						replace all "●레벨제한" and ":" and " " with "" in {_lr}
+						set {_lr} to {_lr} parsed as number
+						set {attack.%loop-player%.레벨제한} to {_lr}
+					if loop-value-2 contains "●턱 제한:":
+						set {_lr} to loop-value-2
+						replace all "●턱 제한" and ":" and " " with "" in {_lr}
+						set {_lr} to {_lr} parsed as number
+						set {attack.%loop-player%.턱제한} to {_lr}
+					if loop-value-2 contains "●눈 제한:":
+						set {_lr} to loop-value-2
+						replace all "●눈 제한" and ":" and " " with "" in {_lr}
+						set {_lr} to {_lr} parsed as number
+						set {attack.%loop-player%.눈제한} to {_lr}
+					if loop-value-2 contains "●아가미 제한:":
+						set {_lr} to loop-value-2
+						replace all "●아가미 제한" and ":" and " " with "" in {_lr}
+						set {_lr} to {_lr} parsed as number
+						set {attack.%loop-player%.아가미제한} to {_lr}
+					if loop-value-2 contains "●비늘 제한:":
+						set {_lr} to loop-value-2
+						replace all "●비늘 제한" and ":" and " " with "" in {_lr}
+						set {_lr} to {_lr} parsed as number
+						set {attack.%loop-player%.비늘제한} to {_lr}
+					if loop-value-2 contains "●지느러미 제한:":
+						set {_lr} to loop-value-2
+						replace all "●지느러미 제한" and ":" and " " with "" in {_lr}
+						set {_lr} to {_lr} parsed as number
+						set {attack.%loop-player%.지느러미제한} to {_lr}
+					if loop-value-2 contains "●공격력:":
+						set {_lr} to loop-value-2
+						replace all "●공격력" and ":" and " " with "" in {_lr}
+						set {_lr} to {_lr} parsed as number
+						set {attack.%loop-player%.공격력} to {_lr}
+					if loop-value-2 contains "●체력흡수:":
+						set {_lr} to loop-value-2
+						replace all "●체력흡수" and ":" and " " with "" in {_lr}
+						set {_lr} to {_lr} parsed as number
+						set {attack.%loop-player%.체력흡수} to {_lr}
+					if loop-value-2 contains "●크리티컬:":
+						set {_lr} to loop-value-2
+						replace all "●크리티컬" and ":" and " " with "" in {_lr}
+						set {_lr} to {_lr} parsed as number
+						set {attack.%loop-player%.크리티컬} to {_lr}
+					if loop-value-2 contains "●이동속도:":
+						set {_lr.%loop-player%} to loop-value-2
+						replace all "●이동속도" and ":" and " " with "" in {_lr.%loop-player%}
+						set {_lr.%loop-player%} to {_lr.%loop-player%} parsed as number
+						set {attack.%loop-player%.이동속도} to {_lr.%loop-player%}
+					if loop-value-2 contains "●턱:":
+						set {_lr} to loop-value-2
+						replace all "●턱" and ":" and " " with "" in {_lr}
+						set {_lr} to {_lr} parsed as number
+						set {attack.%loop-player%.턱} to {_lr}
+					if loop-value-2 contains "●눈:":
+						set {_lr} to loop-value-2
+						replace all "●눈" and ":" and " " with "" in {_lr}
+						set {_lr} to {_lr} parsed as number
+						set {attack.%loop-player%.눈} to {_lr}
+					if loop-value-2 contains "●아가미:":
+						set {_lr} to loop-value-2
+						replace all "●아가미" and ":" and " " with "" in {_lr}
+						set {_lr} to {_lr} parsed as number
+						set {attack.%loop-player%.아가미} to {_lr}
+					if loop-value-2 contains "●비늘:":
+						set {_lr} to loop-value-2
+						replace all "●비늘" and ":" and " " with "" in {_lr}
+						set {_lr} to {_lr} parsed as number
+						set {attack.%loop-player%.비늘} to {_lr}
+					if loop-value-2 contains "●지느러미:":
+						set {_lr} to loop-value-2
+						replace all "●지느러미" and ":" and " " with "" in {_lr}
+						set {_lr} to {_lr} parsed as number
+						set {attack.%loop-player%.지느러미} to {_lr}
+		if loop-player's helmet is not air:
+			set {_모자::*} to uncolored lore of loop-player's helmet
+			loop {_모자::*}:
+				if loop-value-2 contains "●레벨제한:":
+					set {_lr} to loop-value-2
+					replace all "●레벨제한" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					set {helmet.%loop-player%.레벨제한} to {_lr}
+				if loop-value-2 contains "●턱 제한:":
+					set {_lr} to loop-value-2
+					replace all "●턱 제한" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					set {helmet.%loop-player%.턱제한} to {_lr}
+				if loop-value-2 contains "●눈 제한:":
+					set {_lr} to loop-value-2
+					replace all "●눈 제한" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					set {helmet.%loop-player%.눈제한} to {_lr}
+				if loop-value-2 contains "●아가미 제한:":
+					set {_lr} to loop-value-2
+					replace all "●아가미 제한" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					set {helmet.%loop-player%.아가미제한} to {_lr}
+				if loop-value-2 contains "●비늘 제한:":
+					set {_lr} to loop-value-2
+					replace all "●비늘 제한" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					set {helmet.%loop-player%.비늘제한} to {_lr}
+				if loop-value-2 contains "●지느러미 제한:":
+					set {_lr} to loop-value-2
+					replace all "●지느러미 제한" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					set {helmet.%loop-player%.지느러미제한} to {_lr}
+				if loop-value-2 contains "●턱":
+					set {_lr} to loop-value-2
+					replace all "●턱" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					add {_lr} to {armor.%loop-player%.턱}
+				if loop-value-2 contains "●아가미":
+					set {_lr} to loop-value-2
+					replace all "●아가미" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					add {_lr} to {armor.%loop-player%.아가미}
+				if loop-value-2 contains "●비늘":
+					set {_lr} to loop-value-2
+					replace all "●비늘" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					add {_lr} to {armor.%loop-player%.비늘}
+				if loop-value-2 contains "●지느러미":
+					set {_lr} to loop-value-2
+					replace all "●지느러미" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					add {_lr} to {armor.%loop-player%.지느러미}
+				if loop-value-2 contains "●이동속도":
+					set {_lr} to loop-value-2
+					replace all "●이동속도" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					add {_lr} to {armor.%loop-player%.이동속도}
+				if loop-value-2 contains "●체력":
+					set {_lr} to loop-value-2
+					replace all "●체력" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					add {_lr} to {_hp.%loop-player%}
+				if loop-value-2 contains "●공격력":
+					set {_lr} to loop-value-2
+					replace all "●공격력" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					add {_lr} to {armor.%loop-player%.공격력}
+		if loop-player's chestplate is not air:
+			set {_상의::*} to uncolored lore of loop-player's chestplate
+			loop {_상의::*}:
+				if loop-value-2 contains "●레벨제한:":
+					set {_lr} to loop-value-2
+					replace all "●레벨제한" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					set {chestplate.%loop-player%.레벨제한} to {_lr}
+				if loop-value-2 contains "●턱 제한:":
+					set {_lr} to loop-value-2
+					replace all "●턱 제한" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					set {chestplate.%loop-player%.턱제한} to {_lr}
+				if loop-value-2 contains "●눈 제한:":
+					set {_lr} to loop-value-2
+					replace all "●눈 제한" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					set {chestplate.%loop-player%.눈제한} to {_lr}
+				if loop-value-2 contains "●아가미 제한:":
+					set {_lr} to loop-value-2
+					replace all "●아가미 제한" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					set {chestplate.%loop-player%.아가미제한} to {_lr}
+				if loop-value-2 contains "●비늘 제한:":
+					set {_lr} to loop-value-2
+					replace all "●비늘 제한" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					set {chestplate.%loop-player%.비늘제한} to {_lr}
+				if loop-value-2 contains "●지느러미 제한:":
+					set {_lr} to loop-value-2
+					replace all "●지느러미 제한" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					set {chestplate.%loop-player%.지느러미제한} to {_lr}
+				if loop-value-2 contains "●턱":
+					set {_lr} to loop-value-2
+					replace all "●턱" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					add {_lr} to {armor.%loop-player%.턱}
+				if loop-value-2 contains "●아가미":
+					set {_lr} to loop-value-2
+					replace all "●아가미" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					add {_lr} to {armor.%loop-player%.아가미}
+				if loop-value-2 contains "●비늘":
+					set {_lr} to loop-value-2
+					replace all "●비늘" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					add {_lr} to {armor.%loop-player%.비늘}
+				if loop-value-2 contains "●지느러미":
+					set {_lr} to loop-value-2
+					replace all "●지느러미" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					add {_lr} to {armor.%loop-player%.지느러미}
+				if loop-value-2 contains "●이동속도":
+					set {_lr} to loop-value-2
+					replace all "●이동속도" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					add {_lr} to {armor.%loop-player%.이동속도}
+				if loop-value-2 contains "●체력":
+					set {_lr} to loop-value-2
+					replace all "●체력" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					add {_lr} to {_hp.%loop-player%}
+				if loop-value-2 contains "●공격력":
+					set {_lr} to loop-value-2
+					replace all "●공격력" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					add {_lr} to {armor.%loop-player%.공격력}
+		if loop-player's leggings is not air:
+			set {_하의::*} to uncolored lore of loop-player's leggings
+			loop {_하의::*}:
+				if loop-value-2 contains "●레벨제한:":
+					set {_lr} to loop-value-2
+					replace all "●레벨제한" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					set {leggings.%loop-player%.레벨제한} to {_lr}
+				if loop-value-2 contains "●턱 제한:":
+					set {_lr} to loop-value-2
+					replace all "●턱 제한" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					set {leggings.%loop-player%.턱제한} to {_lr}
+				if loop-value-2 contains "●눈 제한:":
+					set {_lr} to loop-value-2
+					replace all "●눈 제한" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					set {leggings.%loop-player%.눈제한} to {_lr}
+				if loop-value-2 contains "●아가미 제한:":
+					set {_lr} to loop-value-2
+					replace all "●아가미 제한" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					set {leggings.%loop-player%.아가미제한} to {_lr}
+				if loop-value-2 contains "●비늘 제한:":
+					set {_lr} to loop-value-2
+					replace all "●비늘 제한" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					set {leggings.%loop-player%.비늘제한} to {_lr}
+				if loop-value-2 contains "●지느러미 제한:":
+					set {_lr} to loop-value-2
+					replace all "●지느러미 제한" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					set {leggings.%loop-player%.지느러미제한} to {_lr}
+				if loop-value-2 contains "●턱":
+					set {_lr} to loop-value-2
+					replace all "●턱" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					add {_lr} to {armor.%loop-player%.턱}
+				if loop-value-2 contains "●아가미":
+					set {_lr} to loop-value-2
+					replace all "●아가미" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					add {_lr} to {armor.%loop-player%.아가미}
+				if loop-value-2 contains "●비늘":
+					set {_lr} to loop-value-2
+					replace all "●비늘" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					add {_lr} to {armor.%loop-player%.비늘}
+				if loop-value-2 contains "●지느러미":
+					set {_lr} to loop-value-2
+					replace all "●지느러미" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					add {_lr} to {armor.%loop-player%.지느러미}
+				if loop-value-2 contains "●이동속도":
+					set {_lr} to loop-value-2
+					replace all "●이동속도" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					add {_lr} to {armor.%loop-player%.이동속도}
+				if loop-value-2 contains "●체력":
+					set {_lr} to loop-value-2
+					replace all "●체력" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					add {_lr} to {_hp.%loop-player%}
+				if loop-value-2 contains "●공격력":
+					set {_lr} to loop-value-2
+					replace all "●공격력" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					add {_lr} to {armor.%loop-player%.공격력}
+
+		if loop-player's boots is not air:
+			set {_신발::*} to uncolored lore of loop-player's boots
+			loop {_신발::*}:
+				if loop-value-2 contains "●레벨제한:":
+					set {_lr} to loop-value-2
+					replace all "●레벨제한" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					set {boots.%loop-player%.레벨제한} to {_lr}
+				if loop-value-2 contains "●턱 제한:":
+					set {_lr} to loop-value-2
+					replace all "●턱 제한" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					set {boots.%loop-player%.턱제한} to {_lr}
+				if loop-value-2 contains "●눈 제한:":
+					set {_lr} to loop-value-2
+					replace all "●눈 제한" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					set {boots.%loop-player%.눈제한} to {_lr}
+				if loop-value-2 contains "●아가미 제한:":
+					set {_lr} to loop-value-2
+					replace all "●아가미 제한" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					set {boots.%loop-player%.아가미제한} to {_lr}
+				if loop-value-2 contains "●비늘 제한:":
+					set {_lr} to loop-value-2
+					replace all "●비늘 제한" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					set {boots.%loop-player%.비늘제한} to {_lr}
+				if loop-value-2 contains "●지느러미 제한:":
+					set {_lr} to loop-value-2
+					replace all "●지느러미 제한" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					set {boots.%loop-player%.지느러미제한} to {_lr}
+				if loop-value-2 contains "●턱":
+					set {_lr} to loop-value-2
+					replace all "●턱" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					add {_lr} to {armor.%loop-player%.턱}
+				if loop-value-2 contains "●아가미":
+					set {_lr} to loop-value-2
+					replace all "●아가미" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					add {_lr} to {armor.%loop-player%.아가미}
+				if loop-value-2 contains "●비늘":
+					set {_lr} to loop-value-2
+					replace all "●비늘" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					add {_lr} to {armor.%loop-player%.비늘}
+				if loop-value-2 contains "●지느러미":
+					set {_lr} to loop-value-2
+					replace all "●지느러미" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					add {_lr} to {armor.%loop-player%.지느러미}
+				if loop-value-2 contains "●이동속도":
+					set {_lr} to loop-value-2
+					replace all "●이동속도" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					add {_lr} to {armor.%loop-player%.이동속도}
+				if loop-value-2 contains "●체력":
+					set {_lr} to loop-value-2
+					replace all "●체력" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					add {_lr} to {_hp.%loop-player%}
+				if loop-value-2 contains "●공격력":
+					set {_lr} to loop-value-2
+					replace all "●공격력" and ":" and " " with "" in {_lr}
+					set {_lr} to {_lr} parsed as number
+					add {_lr} to {armor.%loop-player%.공격력}
+
+		set {%loop-player%.HP} to 30 + {_hp.%loop-player%} + {%loop-player%.아가미}*150 + {armor.%loop-player%.아가미}*150 + {attack.%loop-player%.아가미}*150/4+ {%loop-player%.턱}*10 + {%loop-player%.비늘}*30 + {armor.%loop-player%.비늘}*30 + {attack.%loop-player%.비늘}*30/4 + {레벨.%loop-player%}*20 + {armor.%loop-player%.턱}*10 + {attack.%loop-player%.턱}*10
+		set loop-player's max health to {%loop-player%.HP}/2
+		set {speed.%loop-player%} to 0.2 + {%loop-player%.지느러미}*0.0004 + {attack.%loop-player%.지느러미}*0.0004 + {armor.%loop-player%.지느러미}*0.0004 + {attack.%loop-player%.이동속도}*0.002 + {armor.%loop-player%.이동속도}*0.002
+		set loop-player's walk speed to {speed.%loop-player%}
+
+on armor equip:
+	if {helmet.%player%.레벨제한} is set:
+		if {helmet.%player%.레벨제한} > {레벨.%player%}:
+			cancel event
+			send "&c이 방어구의 레벨 조건을 충족하지 못하셨습니다." to player
+
+	if {helmet.%player%.턱제한} is set:
+		if {helmet.%player%.턱제한} > {%player%.턱}:
+			cancel event
+			send "&c이 방어구의 턱 제한을 충족하지 못하셨습니다." to player
+
+	if {helmet.%player%.눈제한} is set:
+		if {helmet.%player%.눈제한} > {%player%.눈}:
+			cancel event
+			send "&c이 방어구의 눈 제한을 충족하지 못하셨습니다." to player
+
+	if {helmet.%player%.아가미제한} is set:
+		if {helmet.%player%.아가미제한} > {%player%.아가미}:
+			cancel event
+			send "&c이 방어구의 아가미 제한을 충족하지 못하셨습니다." to player
+
+	if {helmet.%player%.비늘제한} is set:
+		if {helmet.%player%.비늘제한} > {%player%.비늘}:
+			cancel event
+			send "&c이 방어구의 비늘 제한을 충족하지 못하셨습니다." to player
+
+	if {helmet.%player%.지느러미제한} is set:
+		if {helmet.%player%.지느러미제한} > {%player%.지느러미}:
+			cancel event
+			send "&c이 방어구의 지느러미 제한을 충족하지 못하셨습니다." to player
+
+	if {chestplate.%player%.레벨제한} is set:
+		if {chestplate.%player%.레벨제한} > {레벨.%player%}:
+			cancel event
+			send "&c이 방어구의 레벨 조건을 충족하지 못하셨습니다." to player
+
+	if {chestplate.%player%.턱제한} is set:
+		if {chestplate.%player%.턱제한} > {%player%.턱}:
+			cancel event
+			send "&c이 방어구의 턱 제한을 충족하지 못하셨습니다." to player
+
+	if {chestplate.%player%.눈제한} is set:
+		if {chestplate.%player%.눈제한} > {%player%.눈}:
+			cancel event
+			send "&c이 방어구의 눈 제한을 충족하지 못하셨습니다." to player
+
+	if {chestplate.%player%.아가미제한} is set:
+		if {chestplate.%player%.아가미제한} > {%player%.아가미}:
+			cancel event
+			send "&c이 방어구의 아가미 제한을 충족하지 못하셨습니다." to player
+
+	if {chestplate.%player%.비늘제한} is set:
+		if {chestplate.%player%.비늘제한} > {%player%.비늘}:
+			cancel event
+			send "&c이 방어구의 비늘 제한을 충족하지 못하셨습니다." to player
+
+	if {chestplate.%player%.지느러미제한} is set:
+		if {chestplate.%player%.지느러미제한} > {%player%.지느러미}:
+			cancel event
+			send "&c이 방어구의 지느러미 제한을 충족하지 못하셨습니다." to player
+	if {leggings.%player%.레벨제한} is set:
+		if {leggings.%player%.레벨제한} > {레벨.%player%}:
+			cancel event
+			send "&c이 방어구의 레벨 조건을 충족하지 못하셨습니다." to player
+
+	if {leggings.%player%.턱제한} is set:
+		if {leggings.%player%.턱제한} > {%player%.턱}:
+			cancel event
+			send "&c이 방어구의 턱 제한을 충족하지 못하셨습니다." to player
+
+	if {leggings.%player%.눈제한} is set:
+		if {leggings.%player%.눈제한} > {%player%.눈}:
+			cancel event
+			send "&c이 방어구의 눈 제한을 충족하지 못하셨습니다." to player
+
+	if {leggings.%player%.아가미제한} is set:
+		if {leggings.%player%.아가미제한} > {%player%.아가미}:
+			cancel event
+			send "&c이 방어구의 아가미 제한을 충족하지 못하셨습니다." to player
+
+	if {leggings.%player%.비늘제한} is set:
+		if {leggings.%player%.비늘제한} > {%player%.비늘}:
+			cancel event
+			send "&c이 방어구의 비늘 제한을 충족하지 못하셨습니다." to player
+
+	if {leggings.%player%.지느러미제한} is set:
+		if {leggings.%player%.지느러미제한} > {%player%.지느러미}:
+			cancel event
+			send "&c이 방어구의 지느러미 제한을 충족하지 못하셨습니다." to player
+	if {boots.%player%.레벨제한} is set:
+		if {boots.%player%.레벨제한} > {레벨.%player%}:
+			cancel event
+			send "&c이 방어구의 레벨 조건을 충족하지 못하셨습니다." to player
+
+	if {boots.%player%.턱제한} is set:
+		if {boots.%player%.턱제한} > {%player%.턱}:
+			cancel event
+			send "&c이 방어구의 턱 제한을 충족하지 못하셨습니다." to player
+
+	if {boots.%player%.눈제한} is set:
+		if {boots.%player%.눈제한} > {%player%.눈}:
+			cancel event
+			send "&c이 방어구의 눈 제한을 충족하지 못하셨습니다." to player
+
+	if {boots.%player%.아가미제한} is set:
+		if {boots.%player%.아가미제한} > {%player%.아가미}:
+			cancel event
+			send "&c이 방어구의 아가미 제한을 충족하지 못하셨습니다." to player
+
+	if {boots.%player%.비늘제한} is set:
+		if {boots.%player%.비늘제한} > {%player%.비늘}:
+			cancel event
+			send "&c이 방어구의 비늘 제한을 충족하지 못하셨습니다." to player
+
+	if {boots.%player%.지느러미제한} is set:
+		if {boots.%player%.지느러미제한} > {%player%.지느러미}:
+			cancel event
+			send "&c이 방어구의 지느러미 제한을 충족하지 못하셨습니다." to player
+
+on damage:
+	if attacker is player:
+		if {attack.%attacker%.레벨제한} is set:
+			if {attack.%attacker%.레벨제한} > {레벨.%attacker%}:
+				cancel event
+				send "&c이 무기의 레벨 조건을 충족하지 못하셨습니다." to attacker
+
+		if {attack.%attacker%.턱제한} is set:
+			if {attack.%attacker%.턱제한} > {%attacker%.턱}:
+				cancel event
+				send "&c이 무기의 턱 제한을 충족하지 못하셨습니다." to attacker
+
+		if {attack.%attacker%.눈제한} is set:
+			if {attack.%attacker%.눈제한} > {%attacker%.눈}:
+				cancel event
+				send "&c이 무기의 눈 제한을 충족하지 못하셨습니다." to attacker
+
+		if {attack.%attacker%.아가미제한} is set:
+			if {attack.%attacker%.아가미제한} > {%attacker%.아가미}:
+				cancel event
+				send "&c이 무기의 아가미 제한을 충족하지 못하셨습니다." to attacker
+
+		if {attack.%attacker%.비늘제한} is set:
+			if {attack.%attacker%.비늘제한} > {%attacker%.비늘}:
+				cancel event
+				send "&c이 무기의 비늘 제한을 충족하지 못하셨습니다." to attacker
+
+		if {attack.%attacker%.지느러미제한} is set:
+			if {attack.%attacker%.지느러미제한} > {%attacker%.지느러미}:
+				cancel event
+				send "&c이 무기의 지느러미 제한을 충족하지 못하셨습니다." to attacker
+
+		set damage to 1
+		add 2*{%attacker%.턱} to damage
+		add 0.5*{%attacker%.지느러미} to damage
+		add 2*{attack.%attacker%.턱} to damage
+		add 0.5*{attack.%attacker%.지느러미} to damage
+		add 2*{armor.%attacker%.턱} to damage
+		add 0.5*{armor.%attacker%.지느러미} to damage
+		add {attack.%attacker%.공격력}/2 to damage
+		add {armor.%attacker%.공격력}/2 to damage
+		add {attack.%attacker%.체력흡수}/2 to attacker's health
+		set {%attacker%.크리티컬} to 0.2 * {%attacker%.눈} +  {attack.%attacker%.크리티컬} + 0.2 * {attack.%attacker%.눈} + 0.2 * {armor.%attacker%.눈}
+
+		chance of {%attacker%.크리티컬}%:
+			set damage to damage*2
+			send "&e*크리티컬!*" to attacker
+
+		subtract 1.5*{%victim%.비늘} from damage
+		subtract 1.5*{attack.%victim%.비늘} from damage
+		subtract 1.5*{armor.%victim%.비늘} from damage
+
+	if victim is player:
+		set {_df} to 0
+		set {_lr.%victim%} to 0
+		set {_모자::*} to uncolored lore of victim's helmet
+		loop {_모자::*}:
+			if loop-value contains "●방어력:":
+				set {_lr.%victim%} to loop-value
+				replace all "●방어력: " with "" in {_lr.%victim%}
+				set {_lr.%victim%} to {_lr.%victim%} parsed as number
+				add {_lr.%victim%} to {_df}
+
+		set {_lr.%victim%} to 0
+		set {_상의::*} to uncolored lore of victim's chestplate
+		loop {_상의::*}:
+			if loop-value contains "●방어력:":
+				set {_lr.%victim%} to loop-value
+				replace all "●방어력: " with "" in {_lr.%victim%}
+				set {_lr.%victim%} to {_lr.%victim%} parsed as number
+				add {_lr.%victim%} to {_df}
+
+		set {_lr.%victim%} to 0
+		set {_하의::*} to uncolored lore of victim's leggings
+		loop {_하의::*}:
+			if loop-value contains "●방어력:":
+				set {_lr.%victim%} to loop-value
+				replace all "●방어력: " with "" in {_lr.%victim%}
+				set {_lr.%victim%} to {_lr.%victim%} parsed as number
+				add {_lr.%victim%} to {_df}
+
+		set {_lr.%victim%} to 0
+		set {_하의::*} to uncolored lore of victim's boots
+		loop {_하의::*}:
+			if loop-value contains "●방어력:":
+				set {_lr.%victim%} to loop-value
+				replace all "●방어력: " with "" in {_lr.%victim%}
+				set {_lr.%victim%} to {_lr.%victim%} parsed as number
+				add {_lr.%victim%} to {_df}
+
+		subtract {_df}/8 from damage
+
+
+
+command /RPG경험치최대설정:
+	trigger:
+		set {_n} to 0
+		set {_exp} to 50
+		set {rpg.maxExp::%{_n}%} to {_exp}
+		message "[%{_n}%] - %{rpg.maxExp::%{_n}%}%"
+		loop 10 times:
+			set {_n} to loop-value
+			set {_add} to 50
+			set {_exp} to {_n} * 10 + {_add}
+			set {rpg.maxExp::%{_n}%} to {_exp}
+			message "[%{_n}%] - %{rpg.maxExp::%{_n}%}%"
+		loop 10 times:
+			set {_n} to loop-value + 10
+			set {_add} to 20
+			set {_exp} to {_n} * 20 + {_add}
+			set {rpg.maxExp::%{_n}%} to {_exp}
+			message "[%{_n}%] - %{rpg.maxExp::%{_n}%}%"
+		loop 10 times:
+			set {_n} to loop-value + 20
+			set {_add} to 90
+			set {_exp} to {_n} * 30 - {_add}
+			set {rpg.maxExp::%{_n}%} to {_exp}
+			message "[%{_n}%] - %{rpg.maxExp::%{_n}%}%"
+		loop 8 times:
+			set {_n} to loop-value + 30
+			set {_add} to 310
+			set {_exp} to {_n} * 40 - {_add}
+			set {rpg.maxExp::%{_n}%} to {_exp}
+			message "[%{_n}%] - %{rpg.maxExp::%{_n}%}%"
+		loop 10 times:
+			set {_n} to loop-value + 38
+			set {_add} to 15000
+			set {_exp} to {_n} * 500 - {_add}
+			set {rpg.maxExp::%{_n}%} to {_exp}
+			message "[%{_n}%] - %{rpg.maxExp::%{_n}%}%"
+		loop 10 times:
+			set {_n} to loop-value + 48
+			set {_add} to 13500
+			set {_exp} to {_n} * 500 - {_add}
+			set {rpg.maxExp::%{_n}%} to {_exp}
+			message "[%{_n}%] - %{rpg.maxExp::%{_n}%}%"
+		loop 10 times:
+			set {_n} to loop-value + 58
+			set {_add} to 11500
+			set {_exp} to {_n} * 500 - {_add}
+			set {rpg.maxExp::%{_n}%} to {_exp}
+			message "[%{_n}%] - %{rpg.maxExp::%{_n}%}%"
+		loop 10 times:
+			set {_n} to loop-value + 68
+			set {_add} to 9500
+			set {_exp} to {_n} * 500 - {_add}
+			set {rpg.maxExp::%{_n}%} to {_exp}
+			message "[%{_n}%] - %{rpg.maxExp::%{_n}%}%"
+		exit
+
+on exp spawn:
+	cancel event
+
+on experience change:
+	cancel event
+
+command /경험치북 [<integer>]:
+	permission: op.op
+	trigger:
+		give 1 of exp bottle named "&e[ &f경험치 &e] &c[ &f%arg-1% &c]" to player
+
+command /스텟추가권 [<integer>]:
+	permission: op.op
+	trigger:
+		give 1 of paper named "&e[ &a스텟포인트 &b추가권 &e] &c[ &a+%arg-1% &c]" to player
+
+command /턱스텟추가권 [<integer>]:
+	permission: op.op
+	trigger:
+		give 1 of paper named "&e[ &7턱 &a스텟 &b추가권 &e] &c[ &a+%arg-1% &c]" to player
+
+command /눈스텟추가권 [<integer>]:
+	permission: op.op
+	trigger:
+		give 1 of paper named "&e[ &e눈 &a스텟 &b추가권 &e] &c[ &a+%arg-1% &c]" to player
+
+command /아가미스텟추가권 [<integer>]:
+	permission: op.op
+	trigger:
+		give 1 of paper named "&e[ &a아가미 &a스텟 &b추가권 &e] &c[ &a+%arg-1% &c]" to player
+
+command /비늘스텟추가권 [<integer>]:
+	permission: op.op
+	trigger:
+		give 1 of paper named "&e[ &1비늘 &a스텟 &b추가권 &e] &c[ &a+%arg-1% &c]" to player
+
+command /지느러미스텟추가권 [<integer>]:
+	permission: op.op
+	trigger:
+		give 1 of paper named "&e[ &4지느러미 &a스텟 &b추가권 &e] &c[ &a+%arg-1% &c]" to player
+
+on rightclick holding exp bottle:
+	cancel event
+	if name of player's tool contains "경험치":
+		set {_exp} to uncolored name of player's tool
+		replace all "[" and " " and "경험치" and " " and "]" and "[" and " " and " " and "]" with "" in {_exp}
+		remove 1 of player's tool from player's tool
+		add ({_exp} parsed as integer) to {경험치.%player%}
+		message ""
+		message "&e[ &f경험치 &e] &f경험치를 사용하여 &c[ &f%{_exp}% &c] &f만큼의 &e경험치&f를 얻으셨습니다."
+		message "&e[ &f현재경험치 &e] &c[ &f%{경험치.%player%}% &c]"
+		message "&e[ &f총 필요한 경험치 &e] &c[ &f%{rpg.maxExp::%{레벨.%player%}%}% &c]"
+		message ""
+
+on rightclick holding paper:
+	cancel event
+	if name of player's tool contains "스텟포인트":
+		set {_plusstat} to uncolored name of player's tool
+		replace all "[" and " " and "스텟포인트" and " " and "추가권" and " " and "]" and "[" and " " and " " and "]" with "" in {_plusstat}
+		remove 1 of player's tool from player's tool
+		add ({_plusstat} parsed as integer) to {%player%.스텟포인트}
+	if name of player's tool contains "턱":
+		set {_plusstat} to uncolored name of player's tool
+		replace all "[" and " " and "턱" and " " and "스텟" and " " and "추가권" and " " and "]" and "[" and " " and " " and "]" with "" in {_plusstat}
+		remove 1 of player's tool from player's tool
+		add ({_plusstat} parsed as integer) to {%player%.턱}
+	if name of player's tool contains "눈":
+		set {_plusstat} to uncolored name of player's tool
+		replace all "[" and " " and "눈" and " " and "스텟" and " " and "추가권" and " " and "]" and "[" and " " and " " and "]" with "" in {_plusstat}
+		remove 1 of player's tool from player's tool
+		add ({_plusstat} parsed as integer) to {%player%.눈}
+	if name of player's tool contains "아가미":
+		set {_plusstat} to uncolored name of player's tool
+		replace all "[" and " " and "아가미" and " " and "스텟" and " " and "추가권" and " " and "]" and "[" and " " and " " and "]" with "" in {_plusstat}
+		remove 1 of player's tool from player's tool
+		add ({_plusstat} parsed as integer) to {%player%.아가미}
+	if name of player's tool contains "비늘":
+		set {_plusstat} to uncolored name of player's tool
+		replace all "[" and " " and "비늘" and " " and "스텟" and " " and "추가권" and " " and "]" and "[" and " " and " " and "]" with "" in {_plusstat}
+		remove 1 of player's tool from player's tool
+		add ({_plusstat} parsed as integer) to {%player%.비늘}
+	if name of player's tool contains "지느러미":
+		set {_plusstat} to uncolored name of player's tool
+		replace all "[" and " " and "지느러미" and " " and "스텟" and " " and "추가권" and " " and "]" and "[" and " " and " " and "]" with "" in {_plusstat}
+		remove 1 of player's tool from player's tool
+		add ({_plusstat} parsed as integer) to {%player%.지느러미}
+
+on death:
+	set death message to "&6%victim%&f님이 &6%attacker%&f님에게 살해당했습니다"
+	set {경험치.%victim%} to 0
+
+every 1 seconds:
+	loop all players:
+		if {레벨.%loop-player%} < {최대레벨}:
+			if {경험치.%loop-player%} > {rpg.maxExp::%{레벨.%loop-player%}%}:
+				set {경험치.%loop-player%} to  {경험치.%loop-player%} - {rpg.maxExp::%{레벨.%loop-player%}%}
+				add 1 to {레벨.%loop-player%}
+				add 4 to {%loop-player%.스텟포인트}
+				message "-------------------------------------------" to loop-player
+				message "레벨이 1 올랐습니다!" to loop-player
+				message "-------------------------------------------" to loop-player
+				exit
+			else if {경험치.%loop-player%} = {rpg.maxExp::%{레벨.%loop-player%}%}:
+				add 1 to {레벨.%loop-player%}
+				add 4 to {%loop-player%.스텟포인트}
+				set {경험치.%loop-player%} to 0
+				message "-------------------------------------------" to loop-player
+				message "레벨이 1 올랐습니다!" to loop-player
+				message "-------------------------------------------" to loop-player
+				exit
+  </body>
+</html>
